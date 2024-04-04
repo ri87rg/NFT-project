@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --secondary-color: #8ea8c8;
+  --main-color: #5ae0e7;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1a2d;
+  height: 100vh;
+}
+.page .container {
+  width: 400px;
+  background-color: #14273e;
+  border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .page .container {
+    width: 300px;
+  }
+}
+.page .container .content {
+  margin: 20px;
+  font-family: monospace;
+  word-spacing: -5px;
+}
+.page .container .content .new {
+  position: relative;
+  margin: 10px;
+  background-color: #5ae0e7bf;
+  border-radius: 16px;
+  height: 340px;
+  background-position: center;
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .page .container .content .new {
+    height: 240px;
+  }
+}
+.page .container .content .new img:hover {
+  mix-blend-mode: overlay;
+}
+.page .container .content .new img {
+  border-radius: 15px;
+  width: 340px;
+  width: -webkit-fill-available;
+}
+.page .container .content h1:hover {
+  color: var(--main-color);
+}
+.page .container .content h1 {
+  color: white;
+  margin: 20px 0 0;
+  transition: 0.5s;
+  width: fit-content;
+}
+.page .container .content p {
+  color: var(--secondary-color);
+  font-size: 17px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+/* ------------------------------------------------------------------ */
+.page .container .content span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.page .container .content span .eth-price {
+  font-weight: 600;
+  font-size: 17px;
+}
+.page .container .content span .eth-price span {
+  color: #5ae0e7;
+  margin-left: 5px;
+}
+/* ------------------------------------------------------------------ */
+.page .container .content span .dead-line {
+  font-weight: 600;
+  font-size: 17px;
+}
+/* @media (max-width: 767px) {
+  .page .container .content .dead-line {
+    margin-left: calc(50% - 80px);
+  }
+} */
+.page .container .content span .dead-line span {
+  color: var(--secondary-color);
+}
+/* ------------------------------------------------------------------ */
+.page .container .content hr {
+  margin: 20px 0;
+}
+.page .container .content .credit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.page .container .content .credit span.pic img {
+  width: 40px;
+  margin-right: 15px;
+}
+.page .container .content .credit .text {
+  color: var(--secondary-color);
+  font-size: 17px;
+  font-weight: 600;
+}
+.page .container .content .credit .text span:hover {
+  color: var(--main-color);
+}
+.page .container .content .credit .text span {
+  color: white;
+  transition: 0.5s;
+}
